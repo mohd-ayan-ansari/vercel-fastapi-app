@@ -15,7 +15,7 @@ app.add_middleware(
 )
 
 # Load student marks from JSON once at startup
-with open(os.path.join(os.path.dirname(__file__), '../students.json')) as f:
+with open(os.path.join(os.path.dirname(__file__), 'students.json')) as f:
     student_data = json.load(f)
 
 @app.get("/api")
